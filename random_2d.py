@@ -1,14 +1,14 @@
 import random
 
-def create_2d_list(numberOfRows, numberOfColumns):
+def create_2d_list(nRows, nColumns):
    
-    my_list = [[0 for i in range(numberOfColumns)] for j in range(numberOfRows)]
+    R_list = [[0 for i in range(nColumns)] for j in range(nRows)]
 
     
-    for i in range(numberOfRows):
-        for j in range(numberOfColumns):
-            my_list[i][j] = random.randint(0, 100)
+    for i in range(nRows):
+        for j in range(nColumns):
+            R_list[i][j] = random.randint(0, 100)
 
-    return my_list
+    return R_list
     
 
